@@ -80,6 +80,7 @@ t: (String, Int, String) = (leo,30,hello)
 scala> t._1
 ```
 
+&ensp;
 ```scala
 // zip操作
 scala> val names = Array("leo", "jack", "mike")
@@ -88,6 +89,7 @@ names: Array[String] = Array(leo, jack, mike)
 scala> val ages = Array(30, 24, 25)
 ages: Array[Int] = Array(30, 24, 25)
 
+// 将两个Array合并成一个个Tuple
 scala> val nameAges = names.zip(ages)
 nameAges: Array[(String, Int)] = Array((leo,30), (jack,24), (mike,25))
 
@@ -95,4 +97,11 @@ scala> for ((name, age) <- nameAges) println(name + ":" + age)
 leo:30
 jack:24
 mike:25
+
+// 如果Array的元素类型是个Tuple，调用toMap方法可以将Array转换为Map
+scala> val maps = nameAges.toMap
+maps: scala.collection.immutable.Map[String,Int] = Map(leo -> 30, jack -> 24, mike -> 25)
+
+scala> maps("leo")
+res24: Int = 30
 ```
