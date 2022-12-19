@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-19T05:46:34.180Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="nmaN_1jjlJYFUG9ZhlHt" version="20.4.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-19T06:58:36.003Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="QkLN2Fr2oo5YjLCuqQee" version="20.4.0" type="github" pages="2">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="radar_nn">
     <mxGraphModel dx="901" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -113,19 +113,19 @@
         <mxCell id="-ngliy7KQaLx1KvYLHF3-6" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;pointcloud_parser&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 12px; background-color: initial;&quot;&gt;- 将一个radar源数据转换为序列化数据&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
           <mxGeometry x="60" y="50" width="191" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="-ngliy7KQaLx1KvYLHF3-7" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;sensor_checking&lt;/font&gt;&lt;br&gt;&lt;div style=&quot;font-size: 12px; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 判断某叠帧个数是否大于阈值，如果满足则触发Perception逻辑。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 将没有收到传感器帧的传感器置为不可用&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
-          <mxGeometry x="299" y="50" width="211" height="90" as="geometry" />
+        <mxCell id="-ngliy7KQaLx1KvYLHF3-7" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;sensor_checking&lt;/font&gt;&lt;br&gt;&lt;div style=&quot;font-size: 12px; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 判断某叠帧个数是否大于阈值（默认是7个，因为有5个radar，每个15HZ，1s触发10次的话，每次应该是7个），如果满足则触发Perception逻辑。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 将没有收到传感器帧的传感器置为不可用（通过时间间隔来判断）&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
+          <mxGeometry x="267" y="30" width="271" height="120" as="geometry" />
         </mxCell>
         <mxCell id="-ngliy7KQaLx1KvYLHF3-14" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;preprocess&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- 把位置坐标从极坐标转到车体坐标（包括位置和速度）&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
           <mxGeometry x="590" y="50" width="191" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="-ngliy7KQaLx1KvYLHF3-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;featrue_extraction&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
+        <mxCell id="-ngliy7KQaLx1KvYLHF3-15" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;featrue_extraction&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- 从点云数据中提取featrue，用于inference的输入&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
           <mxGeometry x="830" y="50" width="221" height="70" as="geometry" />
         </mxCell>
         <mxCell id="-ngliy7KQaLx1KvYLHF3-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="dRzGXTFHlpWNeI_Sd_36-68" source="-ngliy7KQaLx1KvYLHF3-16" target="-ngliy7KQaLx1KvYLHF3-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ngliy7KQaLx1KvYLHF3-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;inference_engine&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
+        <mxCell id="-ngliy7KQaLx1KvYLHF3-16" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;inference_engine&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- 运行推理引擎来生成tensors(张量）&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
           <mxGeometry x="1100" y="40" width="221" height="70" as="geometry" />
         </mxCell>
         <mxCell id="-ngliy7KQaLx1KvYLHF3-17" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;object_extraction&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- 从网络的输出提取障碍物&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="dRzGXTFHlpWNeI_Sd_36-68">
@@ -152,8 +152,8 @@
         <mxCell id="-ngliy7KQaLx1KvYLHF3-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="dRzGXTFHlpWNeI_Sd_36-51" source="-ngliy7KQaLx1KvYLHF3-2" target="-ngliy7KQaLx1KvYLHF3-10">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1055" y="720" />
-              <mxPoint x="686" y="720" />
+              <mxPoint x="1055" y="770" />
+              <mxPoint x="686" y="770" />
             </Array>
           </mxGeometry>
         </mxCell>
