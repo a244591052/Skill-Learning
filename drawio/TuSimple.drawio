@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-14T10:43:15.027Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="rM3k9g1_R-t-4qiA5F7I" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-14T10:44:45.246Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="hJEGxoJ-8rXrvru-sEPn" version="20.8.20" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1362" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -40,7 +40,7 @@
         <mxCell id="QXIA_VAwWtRALYvtrusa-11" value="def queue_init(self):&#xa;&#xa;def queue_pull(self):&#xa;&#xa;def queue_put(self, obj: Any): 通过序列化写OSS文件实现，使用oss append的api" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-8">
           <mxGeometry y="88" width="490" height="92" as="geometry" />
         </mxCell>
-        <mxCell id="QXIA_VAwWtRALYvtrusa-12" value="待问：&lt;br&gt;&lt;ol&gt;&lt;li style=&quot;text-align: left;&quot;&gt;ro什么意思？&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;151行？&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;写队列用的不是multi.queue，这玩意有上限的吧？&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;怎么能复现你说的bug？（有已有的yaml可以复现吗？）&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="QXIA_VAwWtRALYvtrusa-12" value="待问：&lt;br&gt;&lt;ol&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;怎么能复现你说的bug？很难复现（有已有的yaml可以复现吗？基于build_runner改写）&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="827" y="50" width="370" height="170" as="geometry" />
         </mxCell>
       </root>
