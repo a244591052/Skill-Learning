@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-14T07:56:52.585Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="5Eysc6YBIORCyOHa9EOc" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-14T10:43:15.027Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="rM3k9g1_R-t-4qiA5F7I" version="20.8.20" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1362" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -17,19 +17,19 @@
           <mxGeometry y="88" width="480" height="62" as="geometry" />
         </mxCell>
         <mxCell id="QXIA_VAwWtRALYvtrusa-4" value="FolderArtifactStore" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="119" y="330" width="590" height="350" as="geometry" />
+          <mxGeometry x="119" y="330" width="600" height="390" as="geometry" />
         </mxCell>
         <mxCell id="QXIA_VAwWtRALYvtrusa-5" value="_meta: TArtifactMeta&#xa;&#xa;_ctx: TArtifactContext" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-4">
-          <mxGeometry y="26" width="590" height="54" as="geometry" />
+          <mxGeometry y="26" width="600" height="54" as="geometry" />
         </mxCell>
         <mxCell id="QXIA_VAwWtRALYvtrusa-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-4">
-          <mxGeometry y="80" width="590" height="8" as="geometry" />
+          <mxGeometry y="80" width="600" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="QXIA_VAwWtRALYvtrusa-7" value="mount(self): 根据meta属性决定挂载本地文件或OSS&#xa;&#xa;force_link(self, src: str, dst: str): 创建一个软链接，作用？？？&#xa;&#xa;mount_oss(self, oss_meta: OssFolderMeta): 挂载OSS，并根据读取模式做准备工作&#xa;&#xa;_oss_write_worker_master(self): direct write子进程调度函数，负责子进程的增加和停止）&#xa;&#xa;_oss_direct_write_worker(self): 实际完成direct write的子进程&#xa;&#xa;sync_writes(self): 保证队列里面的东西全部消费完？？？&#xa;&#xa;glob(self, pattern: str, prefix=&quot;&quot;, file_only=False): ？？？&#xa;&#xa;atomic_update(self, subpath: str, process: Callable[[bytes], bytes], retry=6): 原子更新？？？背景？&#xa;什么情况会用到？这个锁目录其他地方也没用到阿？&#xa;&#xa;append_log(self, subpath: str, position: Optional[int], logs: bytes): 读取某文件指定范围内的数据" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-4">
-          <mxGeometry y="88" width="590" height="262" as="geometry" />
+        <mxCell id="QXIA_VAwWtRALYvtrusa-7" value="mount(self): 根据meta属性决定挂载本地文件或OSS&#xa;&#xa;force_link(self, src: str, dst: str): 创建一个软链接，历史遗留问题，现在可以不用看&#xa;&#xa;mount_oss(self, oss_meta: OssFolderMeta): 挂载OSS，并根据读取模式做准备工作&#xa;&#xa;_oss_write_worker_master(self): direct write子进程调度函数，负责子进程的增加和停止）&#xa;&#xa;_oss_direct_write_worker(self): 实际完成direct write的子进程&#xa;&#xa;sync_writes(self): 保证队列里面的东西全部消费完？？？&#xa;&#xa;glob(self, pattern: str, prefix=&quot;&quot;, file_only=False): 在某一个目录下遍历搜索（本地文件或oss）&#xa;&#xa;atomic_update(self, subpath: str, process: Callable[[bytes], bytes], retry=6): 原子更新，用于多个runner写&#xa;同一个文件的情况，写文件之前先加锁，写完再删掉。&#xa;&#xa;append_log(self, subpath: str, position: Optional[int], logs: bytes): 读取某文件指定范围内的数据" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-4">
+          <mxGeometry y="88" width="600" height="302" as="geometry" />
         </mxCell>
         <mxCell id="QXIA_VAwWtRALYvtrusa-8" value="OssQueue" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="800" y="440" width="490" height="180" as="geometry" />
+          <mxGeometry x="840" y="450" width="490" height="180" as="geometry" />
         </mxCell>
         <mxCell id="QXIA_VAwWtRALYvtrusa-9" value="self.store&#xa;        self.subpath&#xa;        self.position" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-8">
           <mxGeometry y="26" width="490" height="54" as="geometry" />
@@ -37,7 +37,7 @@
         <mxCell id="QXIA_VAwWtRALYvtrusa-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-8">
           <mxGeometry y="80" width="490" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="QXIA_VAwWtRALYvtrusa-11" value="def queue_init(self):&#xa;&#xa;def queue_pull(self):&#xa;&#xa;def queue_put(self, obj: Any): 通过序列化写OSS文件实现？？？" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-8">
+        <mxCell id="QXIA_VAwWtRALYvtrusa-11" value="def queue_init(self):&#xa;&#xa;def queue_pull(self):&#xa;&#xa;def queue_put(self, obj: Any): 通过序列化写OSS文件实现，使用oss append的api" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="QXIA_VAwWtRALYvtrusa-8">
           <mxGeometry y="88" width="490" height="92" as="geometry" />
         </mxCell>
         <mxCell id="QXIA_VAwWtRALYvtrusa-12" value="待问：&lt;br&gt;&lt;ol&gt;&lt;li style=&quot;text-align: left;&quot;&gt;ro什么意思？&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;151行？&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;写队列用的不是multi.queue，这玩意有上限的吧？&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;怎么能复现你说的bug？（有已有的yaml可以复现吗？）&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
