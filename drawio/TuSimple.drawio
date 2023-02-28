@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-28T03:21:22.572Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="yBkPosMRow5urX6R1E0w" version="20.8.20" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-02-28T06:57:03.464Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="8smVLO-1ezVPuCMntDFQ" version="20.8.20" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,7 +52,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-1" value="Pipeline" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="160" y="50" width="810" height="990" as="geometry">
+          <mxGeometry x="160" y="50" width="850" height="990" as="geometry">
             <mxRectangle x="20" y="140" width="80" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -77,13 +77,19 @@
           <mxGeometry x="60" y="170" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-157" value="Schedule" style="swimlane;html=1;startSize=20;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-1">
-          <mxGeometry x="300" y="20" width="260" height="970" as="geometry" />
+          <mxGeometry x="300" y="20" width="300" height="970" as="geometry" />
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-163" value="" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-157">
-          <mxGeometry x="65" y="165" width="120" height="60" as="geometry" />
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-167" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-157" source="Bu4tqk1s5aV7CT5vhAS4-163" target="Bu4tqk1s5aV7CT5vhAS4-166">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-163" value="pipeline_main" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-157">
+          <mxGeometry x="90" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-166" value="&lt;b&gt;&lt;br&gt;pipelineRunner&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;主要负责runner的调度&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;如果是run-local模式则在本地跑，否则用线程池起pod运行&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-157">
+          <mxGeometry x="20" y="280" width="235" height="75" as="geometry" />
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-11" value="Runner" style="swimlane;html=1;startSize=20;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-1">
-          <mxGeometry x="560" y="20" width="250" height="970" as="geometry" />
+          <mxGeometry x="600" y="20" width="250" height="970" as="geometry" />
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-164" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-1" source="Bu4tqk1s5aV7CT5vhAS4-161" target="Bu4tqk1s5aV7CT5vhAS4-163">
           <mxGeometry relative="1" as="geometry" />
