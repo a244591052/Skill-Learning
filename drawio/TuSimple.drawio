@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-06T08:31:37.580Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="1U2e9VJXP8aNy8NiPSBv" version="20.8.20" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-03-06T08:46:38.234Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="ezxueJbTYs-DYuoeTiXv" version="20.8.20" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,7 +47,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="4tBroP06ard_kNPbEn_R" name="第 2 页">
-    <mxGraphModel dx="2261" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,7 +56,7 @@
             <mxRectangle x="160" y="10" width="80" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Github Agent(pod)&lt;/font&gt;" style="swimlane;html=1;startSize=20;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-1">
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Github Agent&lt;/font&gt;" style="swimlane;html=1;startSize=20;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-1">
           <mxGeometry y="40" width="390" height="1530" as="geometry" />
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-158" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
@@ -94,7 +94,7 @@
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-163" value="&lt;b&gt;pipeline_main&lt;br&gt;&lt;br&gt;会启动一个pipelineRnner负责调度runner&lt;br&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
           <mxGeometry x="11.25" y="530" width="272.5" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-157" value="pipelineRuuner" style="swimlane;html=1;startSize=20;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-1">
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-157" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;PipelineRuuner&lt;/font&gt;" style="swimlane;html=1;startSize=20;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-1">
           <mxGeometry x="390" y="40" width="380" height="1530" as="geometry" />
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-166" value="&lt;b&gt;&lt;br&gt;pipelineRunner&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;主要负责runner的调度&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;如果是run-local模式则在本地起多进程跑，否则用线程池在ecos上起pod运行&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-157">
@@ -146,9 +146,6 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="835" y="230" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-191" value="Q:&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;python -m site --user-site???&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;build_pip_extra_lib？？&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="-150" y="120" width="260" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
