@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-09T08:26:18.096Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="0LXXDFrCNPJE1OvoVnVc" version="20.8.20" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-03-09T08:34:34.674Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="jtoksLeBwlgtAjK3m9j-" version="20.8.20" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -143,6 +143,84 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qhfYbfU9dLJ50mcyAVRR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-1" source="Bu4tqk1s5aV7CT5vhAS4-177" target="qhfYbfU9dLJ50mcyAVRR-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="835" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;HEX_Pipeline&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;startSize=40;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1650" width="1110" height="1150" as="geometry">
+            <mxRectangle x="160" y="10" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;golang service&lt;/font&gt;" style="swimlane;html=1;startSize=20;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-1">
+          <mxGeometry y="40" width="390" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-3" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-2">
+          <mxGeometry x="132.5" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-2" source="GT3bgRmilAbsTXQjbUiN-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="147.5" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-2" source="GT3bgRmilAbsTXQjbUiN-6" target="GT3bgRmilAbsTXQjbUiN-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-6" value="docker 起一个golang的service，&lt;br&gt;因为hex的golang接口更稳定一点" style="html=1;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-2">
+          <mxGeometry x="60" y="90" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-8" value="在golang服务里转python代码&lt;br&gt;python&quot;, &quot;-m&quot;, &lt;br&gt;&quot;algo_metadata_pipeline.pipeline.hex_pipeline_runner" style="html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-2">
+          <mxGeometry x="63.75" y="180" width="167.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-14" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;hex_PipelineRuuner&lt;/font&gt;" style="swimlane;html=1;startSize=20;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-1">
+          <mxGeometry x="390" y="40" width="380" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-15" value="&lt;b&gt;&lt;br&gt;hex_pipelineRunner&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;主要负责hex_runner的调度&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;用线程池在ecos上起pod运行&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-14">
+          <mxGeometry x="55.620000000000005" y="100" width="268.75" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-16" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;pipelineRunner::get_runner_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;解析并填充yaml文件&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-14">
+          <mxGeometry x="82.5" y="300" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-14" source="GT3bgRmilAbsTXQjbUiN-15" target="GT3bgRmilAbsTXQjbUiN-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-18" value="新建一个ThreadPoolExecutor，并发运行每一个pod任务" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-14">
+          <mxGeometry x="97.5" y="480" width="185" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-14" source="GT3bgRmilAbsTXQjbUiN-16" target="GT3bgRmilAbsTXQjbUiN-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-20" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;pipelineRunner::build_pods_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;把build pod相关的命令和配置加上&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-14">
+          <mxGeometry x="82.49000000000001" y="390" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-21" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Runner(pod)&lt;/font&gt;" style="swimlane;html=1;startSize=20;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-1">
+          <mxGeometry x="770" y="40" width="340" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-21" source="GT3bgRmilAbsTXQjbUiN-23" target="GT3bgRmilAbsTXQjbUiN-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-23" value="&lt;b&gt;data_runner::run_one_runner&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-21">
+          <mxGeometry x="76.5" y="440" width="187" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-24" value="&lt;b&gt;runner.run&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-21">
+          <mxGeometry x="110" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-21" source="GT3bgRmilAbsTXQjbUiN-26" target="GT3bgRmilAbsTXQjbUiN-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-26" value="运行hex-pipeline-bootstrap准备pod环境, 调用hex_pipeline_pod_main入口函数&lt;br&gt;&lt;br&gt;准备工作在build_pods_configs函数中" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-21">
+          <mxGeometry x="56.25" y="130" width="227.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-21" source="GT3bgRmilAbsTXQjbUiN-28" target="GT3bgRmilAbsTXQjbUiN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-28" value="解析yaml配置运行runners&lt;br&gt;&lt;br&gt;准备工作在get_runner_configs函数中" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="GT3bgRmilAbsTXQjbUiN-21">
+          <mxGeometry x="62.5" y="270" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-1" source="GT3bgRmilAbsTXQjbUiN-8" target="GT3bgRmilAbsTXQjbUiN-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="GT3bgRmilAbsTXQjbUiN-1" source="GT3bgRmilAbsTXQjbUiN-18" target="GT3bgRmilAbsTXQjbUiN-26">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="835" y="230" as="targetPoint" />
           </mxGeometry>
