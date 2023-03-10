@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-10T08:43:38.895Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="cr5oJAC1P0PrW4zXejpZ" version="20.8.20" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-03-10T08:45:38.965Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="DyayeAABNTqOE5Ee0Wgh" version="20.8.20" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -239,7 +239,7 @@
         <mxCell id="oy4cjqn-SdPE-8expqs9-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="oy4cjqn-SdPE-8expqs9-1">
           <mxGeometry x="45" y="100" width="10" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="oy4cjqn-SdPE-8expqs9-3" value="ECOS_HOME" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="oy4cjqn-SdPE-8expqs9-3" value="ECOS_HOME&lt;br&gt;（顶层调度）" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="310" y="70" width="110" height="580" as="geometry" />
         </mxCell>
         <mxCell id="Skz9NoXtfea0mtHy3HKV-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="oy4cjqn-SdPE-8expqs9-3" source="oy4cjqn-SdPE-8expqs9-4" target="oy4cjqn-SdPE-8expqs9-3">
@@ -263,7 +263,7 @@
             <mxPoint x="57" y="6" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oy4cjqn-SdPE-8expqs9-5" value="Task_Scheduler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="oy4cjqn-SdPE-8expqs9-5" value="Task_Scheduler&lt;br&gt;（任务调度）" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="545" y="70" width="120" height="580" as="geometry" />
         </mxCell>
         <mxCell id="oy4cjqn-SdPE-8expqs9-11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="oy4cjqn-SdPE-8expqs9-5">
