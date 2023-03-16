@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-15T09:33:00.781Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="M9AwKRe-VVBNjz2ONdcg" version="20.8.20" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-03-16T03:48:53.791Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="VQAhOdBHauu_C4rtNOpX" version="20.8.20" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -365,18 +365,33 @@
     </mxGraphModel>
   </diagram>
   <diagram id="dqrrxKZsVxmBtT1EYUwh" name="deterministic regen">
-    <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="971" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-1" target="79yNCuCaeIXBfY9i-Q5K-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-33" value="启动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="79yNCuCaeIXBfY9i-Q5K-14">
+          <mxGeometry x="-0.5301" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-1" target="79yNCuCaeIXBfY9i-Q5K-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-34" value="启动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="79yNCuCaeIXBfY9i-Q5K-15">
+          <mxGeometry x="-0.3635" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.617;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=12 12;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-1" target="79yNCuCaeIXBfY9i-Q5K-13">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-35" value="启动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="79yNCuCaeIXBfY9i-Q5K-16">
+          <mxGeometry x="-0.3314" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-1" value="node manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="470" y="130" width="120" height="60" as="geometry" />
@@ -439,6 +454,9 @@
             <mxPoint x="525" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=13;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-8" target="79yNCuCaeIXBfY9i-Q5K-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-8" value="client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="465" y="470" width="120" height="60" as="geometry" />
         </mxCell>
@@ -456,17 +474,88 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.558;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-12" target="79yNCuCaeIXBfY9i-Q5K-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-12" value="client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="760" y="470" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-13" value="node ..." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="795" y="300" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="79yNCuCaeIXBfY9i-Q5K-24" value="全局结束条件：所有的client都退出或者一些crash的条件&lt;br&gt;&lt;br&gt;node manager:管理节点进程，主要负责server进程的管理，因为server进程是唯一一个没有到时自己退出的机制&lt;br&gt;&lt;br&gt;server：对应的算法节点&lt;br&gt;&lt;br&gt;client: 与server一一对应的client，负责从ds中fetch数据，rpc invoke， publishmsg，&lt;span style=&quot;text-align: center;&quot;&gt;同时也负责msg对齐。开始时就安排这一次运行要跑哪些帧，跑完就自己退出，所有的process都知道自己要干啥，干完就退出。&lt;br&gt;&lt;br&gt;record：录node跑完的数据。启动前就设定好要录几帧数据，录完就退出。&lt;br&gt;&lt;br&gt;获取节点启动参数：需要想办法跳过console，直接从ds中事先获取。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="970" width="370" height="310" as="geometry" />
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-24" value="全局结束条件：所有的client都退出或者一些crash的条件&lt;br&gt;&lt;br&gt;node manager:管理节点进程，主要负责server进程的管理，因为server进程是唯一一个没有到时自己退出的机制&lt;br&gt;&lt;br&gt;server：对应的算法节点&lt;br&gt;&lt;br&gt;client: 与server一一对应的client，负责从ds中fetch数据，rpc invoke， publishmsg，&lt;span style=&quot;text-align: center;&quot;&gt;同时也负责msg对齐。开始时就安排这一次运行要跑哪些帧，跑完就自己退出，所有的process都知道自己要干啥，干完就退出。&lt;br&gt;&lt;br&gt;record：录node跑完的数据。启动前就设定好要录几帧数据，录完就退出。&lt;br&gt;&lt;br&gt;获取节点启动参数：需要想办法跳过console，直接从ds中事先获取。&lt;br&gt;&lt;br&gt;tree distributer：负责一对多的发布，可以直接写进client&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="5" width="410" height="345" as="geometry" />
         </mxCell>
         <mxCell id="79yNCuCaeIXBfY9i-Q5K-25" value="ds record" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="465" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-41" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-36" target="79yNCuCaeIXBfY9i-Q5K-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-36" value="start zoro agent??" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="235" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-37" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="280" y="910" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-38" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;fontSize=13;" edge="1" source="79yNCuCaeIXBfY9i-Q5K-37" parent="1" target="79yNCuCaeIXBfY9i-Q5K-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="295" y="1000" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-39" value="start server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="247.5" y="880" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-43" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-40" target="79yNCuCaeIXBfY9i-Q5K-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-40" value="start mwserver&lt;br&gt;如果有相关依赖" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="1">
+          <mxGeometry x="235" y="1120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-46" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-42" target="79yNCuCaeIXBfY9i-Q5K-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-42" value="start rpc server" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="1">
+          <mxGeometry x="235" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-45" value="launching node oracle/oracle, cmd: mwrun oracle__octopus_oracle gpu_device:=gpu:0 map_file:=feature=ysg_donghai_3d&amp;amp;ver=2022072800&amp;amp;base_pt=(30.76073,121.9636)&amp;amp;end_pt=(30.874328,121.882116) trailer:=unknown vehicle:=Foton-3055 rpc_mode:=true heartbeat_id:=oracle name:=oracle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="15" y="1360" width="560" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-47" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-48" target="79yNCuCaeIXBfY9i-Q5K-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-48" value="start middleware spin？？？&lt;br&gt;看起来好像是启动zoro" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="860" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-49" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="905" y="910" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-50" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;fontSize=13;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-49" target="79yNCuCaeIXBfY9i-Q5K-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="1000" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-51" value="init client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="872.5" y="880" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-52" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-53" target="79yNCuCaeIXBfY9i-Q5K-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-53" value="为每个node&lt;br&gt;init tentacle client" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="1">
+          <mxGeometry x="860" y="1120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-54" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="79yNCuCaeIXBfY9i-Q5K-55" target="79yNCuCaeIXBfY9i-Q5K-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-55" value="初始化了一个MiddlewareUtil，但是没有用到" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="1">
+          <mxGeometry x="860" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79yNCuCaeIXBfY9i-Q5K-56" value="node oracle/oracle meta from docker: {&#39;identity&#39;: &#39;oracle/octopus_oracle:oracle/oracle&#39;, &#39;localParam&#39;: [{&#39;key&#39;: &#39;gpu_device&#39;, &#39;value&#39;: &#39;gpu:0&#39;}, {&#39;key&#39;: &#39;map_file&#39;, &#39;value&#39;: &#39;feature=ysg_donghai_3d&amp;amp;ver=2022072800&amp;amp;base_pt=(30.76073,121.9636)&amp;amp;end_pt=(30.874328,121.882116)&#39;}, {&#39;key&#39;: &#39;trailer&#39;, &#39;value&#39;: &#39;unknown&#39;}, {&#39;key&#39;: &#39;vehicle&#39;, &#39;value&#39;: &#39;Foton-3055&#39;}, {&#39;key&#39;: &#39;name&#39;, &#39;value&#39;: &#39;oracle&#39;}, {&#39;key&#39;: &#39;rpc_mode&#39;, &#39;value&#39;: &#39;true&#39;}, {&#39;key&#39;: &#39;heartbeat_id&#39;, &#39;value&#39;: &#39;oracle&#39;}], &#39;mode&#39;: &#39;hardTrigger&#39;, &#39;alignFactor&#39;: 10000000, &#39;functionFrequency&#39;: 10, &#39;inputTopic&#39;: [{&#39;name&#39;: &#39;/tentacle/trigger/_10&#39;, &#39;type&#39;: &#39;null/null&#39;}, {&#39;name&#39;: &#39;/tracker/objects&#39;, &#39;type&#39;: &#39;perception_msgs/TrackResult&#39;}, {&#39;name&#39;: &#39;/localization/pose&#39;, &#39;type&#39;: &#39;geometry_msgs/PoseStamped&#39;}, {&#39;name&#39;: &#39;/virtual_lane_status&#39;, &#39;type&#39;: &#39;perception_msgs/IntersectionResultList&#39;}, {&#39;name&#39;: &#39;/global_status/global_info&#39;, &#39;type&#39;: &#39;global_msgs/GlobalInfoMsg&#39;}, {&#39;name&#39;: &#39;/localization/pvax&#39;, &#39;type&#39;: &#39;localization_msgs/PVAX&#39;}], &#39;outputTopic&#39;: [{&#39;name&#39;: &#39;/oracle/objects&#39;, &#39;type&#39;: &#39;perception_msgs/OracleObjectList&#39;}], &#39;hardInputConfig&#39;: [{&#39;enable&#39;: True, &#39;queueSize&#39;: 20, &#39;frequency&#39;: 10, &#39;skipTimeout&#39;: -1, &#39;offlineTimeout&#39;: -1}, {&#39;enable&#39;: True, &#39;queueSize&#39;: 20, &#39;frequency&#39;: 10, &#39;skipTimeout&#39;: -1, &#39;offlineTimeout&#39;: -1}, {&#39;enable&#39;: True, &#39;queueSize&#39;: 100, &#39;frequency&#39;: 50, &#39;skipTimeout&#39;: -1, &#39;offlineTimeout&#39;: -1}, {&#39;enable&#39;: True, &#39;queueSize&#39;: 20, &#39;frequency&#39;: 10, &#39;skipTimeout&#39;: -1, &#39;offlineTimeout&#39;: 500000000}, {&#39;enable&#39;: True, &#39;queueSize&#39;: 20, &#39;frequency&#39;: 10, &#39;skipTimeout&#39;: -1, &#39;offlineTimeout&#39;: -1}], &#39;softInputConfig&#39;: [{&#39;queueSize&#39;: 1000, &#39;anchor&#39;: &#39;trigger&#39;, &#39;limit&#39;: {&#39;interval&#39;: 100000000}, &#39;direction&#39;: &#39;before&#39;}], &#39;outputConfig&#39;: [{&#39;enable&#39;: True}], &#39;stateRecallCount&#39;: 0}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1350" width="660" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
