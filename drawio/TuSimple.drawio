@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-23T10:07:53.509Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="UnzkO1yBUfj1KDKCtlUR" version="21.0.6" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-03-23T10:22:06.937Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="m5qG5ep4_jKQHSxORwN5" version="21.0.6" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1683" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,17 +47,17 @@
     </mxGraphModel>
   </diagram>
   <diagram id="4tBroP06ard_kNPbEn_R" name="pipeline时序图">
-    <mxGraphModel dx="1683" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1231" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Pipeline&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;startSize=40;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="140" width="730" height="1130" as="geometry">
+          <mxGeometry x="140" width="830" height="830" as="geometry">
             <mxRectangle x="160" y="10" width="80" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Github Agent&lt;/font&gt;" style="swimlane;html=1;startSize=20;" parent="Bu4tqk1s5aV7CT5vhAS4-1" vertex="1">
-          <mxGeometry y="40" width="390" height="1090" as="geometry" />
+          <mxGeometry y="40" width="390" height="790" as="geometry" />
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-188" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="Bu4tqk1s5aV7CT5vhAS4-186" target="Bu4tqk1s5aV7CT5vhAS4-163" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -68,10 +68,10 @@
         <mxCell id="3h-DcwumFSFUfmzp0DGE-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="Bu4tqk1s5aV7CT5vhAS4-163" target="3h-DcwumFSFUfmzp0DGE-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-163" value="&lt;b&gt;pipeline_main&lt;br&gt;&lt;br&gt;会启动一个pipelineRnner负责调度runner&lt;br&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" parent="Bu4tqk1s5aV7CT5vhAS4-2" vertex="1">
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-163" value="&lt;span&gt;pipeline_main&lt;br&gt;&lt;br&gt;会启动一个pipelineRnner负责调度runner&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);fontStyle=1" parent="Bu4tqk1s5aV7CT5vhAS4-2" vertex="1">
           <mxGeometry x="58.75" y="190" width="272.5" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="3h-DcwumFSFUfmzp0DGE-37" value="&lt;b&gt;&lt;br&gt;pipelineRunner&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;主要负责runner的调度&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;创建线程池在ecos上起pod运行&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
+        <mxCell id="3h-DcwumFSFUfmzp0DGE-37" value="&lt;b&gt;&lt;br&gt;pipelineRunner&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;主要负责runner的调度&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;创建线程池在ecos上起多个pod运行&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
           <mxGeometry x="60.63" y="300" width="268.75" height="100" as="geometry" />
         </mxCell>
         <mxCell id="3h-DcwumFSFUfmzp0DGE-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;pipelineRunner::get_runner_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;解析并填充yaml文件&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
@@ -86,32 +86,61 @@
         <mxCell id="3h-DcwumFSFUfmzp0DGE-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="3h-DcwumFSFUfmzp0DGE-38" target="3h-DcwumFSFUfmzp0DGE-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3h-DcwumFSFUfmzp0DGE-42" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;pipelineRunner::build_pods_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;把build pod相关的命令和配置加上&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;会把install runner的逻辑插入到pod要运行的runners列表中，install环境&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
+        <mxCell id="3h-DcwumFSFUfmzp0DGE-42" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;pipelineRunner::build_pods_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;把build pod相关的命令和配置加上&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;会把install runner的逻辑插入到pod要运行的runners列表中，install pod环境&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
           <mxGeometry x="70.64" y="545" width="250.31" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Runner(Ecos pod)&lt;/font&gt;" style="swimlane;html=1;startSize=20;" parent="Bu4tqk1s5aV7CT5vhAS4-1" vertex="1">
-          <mxGeometry x="390" y="40" width="340" height="1090" as="geometry" />
+        <mxCell id="eby8lQmRwH70-oNyaWkp-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-1" source="3h-DcwumFSFUfmzp0DGE-40" target="eby8lQmRwH70-oNyaWkp-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="740" />
+              <mxPoint x="370" y="215" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-170" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Bu4tqk1s5aV7CT5vhAS4-11" source="Bu4tqk1s5aV7CT5vhAS4-168" target="Bu4tqk1s5aV7CT5vhAS4-169" edge="1">
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Runner(Ecos pod)&lt;/font&gt;" style="swimlane;html=1;startSize=20;" parent="Bu4tqk1s5aV7CT5vhAS4-1" vertex="1">
+          <mxGeometry x="390" y="40" width="440" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
+          <mxGeometry x="70" y="70" width="328" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
+          <mxGeometry x="42" y="100" width="328" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-11" source="Bu4tqk1s5aV7CT5vhAS4-168" target="eby8lQmRwH70-oNyaWkp-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-168" value="&lt;b&gt;data_runner::run_one_runner&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
-          <mxGeometry x="76.5" y="350" width="187" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-169" value="&lt;b&gt;runner.run&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
-          <mxGeometry x="110" y="440" width="120" height="60" as="geometry" />
+          <mxGeometry x="70" y="350" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qhfYbfU9dLJ50mcyAVRR-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" parent="Bu4tqk1s5aV7CT5vhAS4-11" source="qhfYbfU9dLJ50mcyAVRR-4" target="qhfYbfU9dLJ50mcyAVRR-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qhfYbfU9dLJ50mcyAVRR-4" value="运行algo-pipeline-bootstrap准备pod环境, 调用pipeline_pod_main入口函数&lt;br&gt;&lt;br&gt;准备工作在build_pods_configs函数中" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
-          <mxGeometry x="62.5" y="140" width="215" height="70" as="geometry" />
+        <mxCell id="qhfYbfU9dLJ50mcyAVRR-4" value="运行algo-pipeline-bootstrap准备pod环境, 调用pipeline_pod_main入口函数&lt;br&gt;&lt;br&gt;（准备工作在build_pods_configs函数中)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
+          <mxGeometry x="66.25" y="140" width="267.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="qhfYbfU9dLJ50mcyAVRR-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" parent="Bu4tqk1s5aV7CT5vhAS4-11" source="qhfYbfU9dLJ50mcyAVRR-5" target="Bu4tqk1s5aV7CT5vhAS4-168" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qhfYbfU9dLJ50mcyAVRR-5" value="解析yaml配置运行runners&lt;br&gt;&lt;br&gt;准备工作在get_runner_configs函数中" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
-          <mxGeometry x="62.5" y="240" width="215" height="70" as="geometry" />
+        <mxCell id="qhfYbfU9dLJ50mcyAVRR-5" value="解析yaml配置运行runners&lt;br&gt;&lt;br&gt;(准备工作在get_runner_configs函数中）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
+          <mxGeometry x="66.25" y="240" width="267.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-1" value="run runners" style="swimlane;childLayout=stackLayout;horizontal=1;fillColor=none;horizontalStack=1;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;strokeColor=none;stackBorder=10;stackSpacing=-12;resizable=1;align=center;points=[];whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
+          <mxGeometry x="52" y="440" width="296" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-2" value="runner1" style="shape=step;perimeter=stepPerimeter;fixedSize=1;points=[];whiteSpace=wrap;html=1;" vertex="1" parent="eby8lQmRwH70-oNyaWkp-1">
+          <mxGeometry x="10" y="33" width="100" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-3" value="runner2" style="shape=step;perimeter=stepPerimeter;fixedSize=1;points=[];whiteSpace=wrap;html=1;" vertex="1" parent="eby8lQmRwH70-oNyaWkp-1">
+          <mxGeometry x="98" y="33" width="100" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-4" value="runner n" style="shape=step;perimeter=stepPerimeter;fixedSize=1;points=[];whiteSpace=wrap;html=1;" vertex="1" parent="eby8lQmRwH70-oNyaWkp-1">
+          <mxGeometry x="186" y="33" width="100" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-9" value="Pod" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
+          <mxGeometry x="160" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-10" value="Pod" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
+          <mxGeometry x="210" y="70" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="GT3bgRmilAbsTXQjbUiN-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;HEX_Pipeline&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;startSize=40;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
           <mxGeometry x="140" y="1650" width="1110" height="760" as="geometry">
