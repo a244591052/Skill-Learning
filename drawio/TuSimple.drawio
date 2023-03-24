@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-24T07:36:09.792Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="OCZOgAYcoKT1E7w8XZ3T" version="21.0.6" type="github" pages="5">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
-    <mxGraphModel dx="1683" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2023-03-24T07:37:25.619Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="EJoEIZmx7EBIhp1k_Tsl" version="21.0.6" type="github" pages="5">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline 类图">
+    <mxGraphModel dx="1231" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -476,7 +476,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="dqrrxKZsVxmBtT1EYUwh" name="deterministic regen">
-    <mxGraphModel dx="2083" dy="2061" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1631" dy="2061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1079,121 +1079,11 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="1tjFlK1rCNgqzWbbysPu" name="pipeline repo时序">
-    <mxGraphModel dx="1631" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="kGaucn43K-sojSnEOjeh" name="第 5 页">
+    <mxGraphModel dx="1231" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-1" value="cn-octopus-perception-oracle" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="70" width="130" height="580" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-1">
-          <mxGeometry x="60" y="105" width="10" height="380" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-3" value="cn-oracle-pipeline" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="70" width="110" height="580" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="DC0S8nlvIlUSVFdLSurV-3" source="DC0S8nlvIlUSVFdLSurV-5" target="DC0S8nlvIlUSVFdLSurV-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-3">
-          <mxGeometry x="50" y="220" width="10" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-8" value="cn-algo-data-platform-pipeline" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="70" width="145" height="580" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-8">
-          <mxGeometry x="67.5" y="75" width="10" height="450" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-12" value="cn-algo-data-platform" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="770" y="70" width="100" height="580" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-12">
-          <mxGeometry x="45" y="70" width="10" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-16" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.2;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.9;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="DC0S8nlvIlUSVFdLSurV-12" source="DC0S8nlvIlUSVFdLSurV-13" target="DC0S8nlvIlUSVFdLSurV-13">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="90" y="100" as="sourcePoint" />
-            <mxPoint x="140" y="50" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="120" y="100" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-17" value="1. 开发代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-16">
-          <mxGeometry x="0.6743" y="-3" relative="1" as="geometry">
-            <mxPoint x="41" y="-37" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-14" value="用户" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-70" y="70" width="100" height="580" as="geometry" />
-        </mxCell>
-        <mxCell id="DC0S8nlvIlUSVFdLSurV-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-14">
-          <mxGeometry x="45" y="100" width="10" height="440" as="geometry" />
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-13" target="DC0S8nlvIlUSVFdLSurV-9">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="720" y="200" />
-              <mxPoint x="720" y="200" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-2" value="2. 部署代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-1">
-          <mxGeometry x="-0.1574" y="-3" relative="1" as="geometry">
-            <mxPoint x="-16" y="-17" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-2" target="DC0S8nlvIlUSVFdLSurV-8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="380" y="270" />
-              <mxPoint x="380" y="270" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-19" value="4. uses: cn-algo-data-platform-pipeline/build&amp;nbsp; build环境&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-18">
-          <mxGeometry x="0.2729" y="1" relative="1" as="geometry">
-            <mxPoint x="-52" y="-19" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-2" target="DC0S8nlvIlUSVFdLSurV-3">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="220" y="360" />
-              <mxPoint x="220" y="360" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-21" value="5. 拉取该repo 代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-20">
-          <mxGeometry x="-0.3649" relative="1" as="geometry">
-            <mxPoint x="28" y="-20" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-2" target="DC0S8nlvIlUSVFdLSurV-8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="390" y="460" />
-              <mxPoint x="390" y="460" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-23" value="6.&amp;nbsp;uses: cn-algo-data-platform-pipeline/run 跑benchmark，&lt;br&gt;使用cn-oracle-pipeline repo里的config" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-22">
-          <mxGeometry x="-0.0894" y="-3" relative="1" as="geometry">
-            <mxPoint x="14" y="-33" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.9;exitY=0.155;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-15" target="DC0S8nlvIlUSVFdLSurV-2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="40" y="290" as="sourcePoint" />
-            <mxPoint x="90" y="240" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6GUKWEaqT55oBYQ-hYBC-27" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3. 提PR，触发Action流水线，&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;跑oracle benchmark&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-26">
-          <mxGeometry x="-0.4241" y="-3" relative="1" as="geometry">
-            <mxPoint x="41" y="-31" as="offset" />
-          </mxGeometry>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
