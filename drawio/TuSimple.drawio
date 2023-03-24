@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-23T11:11:26.081Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="YRZy6KaIUQqGYdwST6RV" version="21.0.6" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-03-24T07:36:09.792Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="OCZOgAYcoKT1E7w8XZ3T" version="21.0.6" type="github" pages="5">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline">
     <mxGraphModel dx="1683" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,7 +47,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="4tBroP06ard_kNPbEn_R" name="pipeline时序图">
-    <mxGraphModel dx="1231" dy="861" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2031" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -62,32 +62,35 @@
         <mxCell id="Bu4tqk1s5aV7CT5vhAS4-188" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="Bu4tqk1s5aV7CT5vhAS4-186" target="Bu4tqk1s5aV7CT5vhAS4-163" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-186" value="exec algo_pipeline_bundle&lt;br&gt;&lt;br&gt;展开bundle文件，会调用pipeline_main的入口" style="whiteSpace=wrap;html=1;fontSize=13;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" parent="Bu4tqk1s5aV7CT5vhAS4-2" vertex="1">
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-186" value="&lt;b&gt;exec algo_pipeline_bundle&lt;br&gt;&lt;/b&gt;&lt;br&gt;展开bundle文件，会调用pipeline_main的入口" style="whiteSpace=wrap;html=1;fontSize=13;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" parent="Bu4tqk1s5aV7CT5vhAS4-2" vertex="1">
           <mxGeometry x="58.75" y="70" width="272.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="3h-DcwumFSFUfmzp0DGE-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="Bu4tqk1s5aV7CT5vhAS4-163" target="3h-DcwumFSFUfmzp0DGE-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-163" value="&lt;span&gt;pipeline_main&lt;br&gt;&lt;br&gt;会启动一个pipelineRnner负责调度runner&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);fontStyle=1" parent="Bu4tqk1s5aV7CT5vhAS4-2" vertex="1">
+        <mxCell id="Bu4tqk1s5aV7CT5vhAS4-163" value="&lt;span&gt;pipeline_main&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;会启动一个pipelineRnner负责调度runner&lt;/span&gt;&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);fontStyle=1" parent="Bu4tqk1s5aV7CT5vhAS4-2" vertex="1">
           <mxGeometry x="58.75" y="190" width="272.5" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="3h-DcwumFSFUfmzp0DGE-37" value="&lt;b&gt;&lt;br&gt;pipelineRunner&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;主要负责runner的调度&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;创建线程池在ecos上起多个pod运行&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
-          <mxGeometry x="60.63" y="300" width="268.75" height="100" as="geometry" />
+        <mxCell id="3h-DcwumFSFUfmzp0DGE-37" value="&lt;b&gt;&lt;br&gt;pipelineRunner&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;主要负责管理pods起停调度&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;创建线程池在ecos上起多个pod运行&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
+          <mxGeometry x="60.625" y="300" width="268.75" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="3h-DcwumFSFUfmzp0DGE-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;pipelineRunner::get_runner_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;解析并填充yaml文件&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
-          <mxGeometry x="70.32" y="450" width="250.63" height="70" as="geometry" />
+        <mxCell id="eby8lQmRwH70-oNyaWkp-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="3h-DcwumFSFUfmzp0DGE-38" target="3h-DcwumFSFUfmzp0DGE-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3h-DcwumFSFUfmzp0DGE-38" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;pipelineRunner::get_runner_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;/b&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;解析并填充yaml文件&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
+          <mxGeometry x="60.09" y="437" width="269.82" height="69" as="geometry" />
         </mxCell>
         <mxCell id="3h-DcwumFSFUfmzp0DGE-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="3h-DcwumFSFUfmzp0DGE-37" target="3h-DcwumFSFUfmzp0DGE-38">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3h-DcwumFSFUfmzp0DGE-40" value="新建一个Threadool，并发运行每一个pod任务" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
-          <mxGeometry x="70.32" y="670" width="250" height="60" as="geometry" />
+        <mxCell id="3h-DcwumFSFUfmzp0DGE-40" value="&lt;b&gt;pipelineRunner::run_pods&lt;/b&gt;&lt;br&gt;&lt;br&gt;新建一个Threadool，并发运行每一个pod任务" style="whiteSpace=wrap;html=1;fillColor=rgb(255, 255, 255);strokeColor=rgb(0, 0, 0);fontColor=rgb(0, 0, 0);" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
+          <mxGeometry x="56.09" y="689" width="277.82" height="61" as="geometry" />
         </mxCell>
-        <mxCell id="3h-DcwumFSFUfmzp0DGE-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="3h-DcwumFSFUfmzp0DGE-38" target="3h-DcwumFSFUfmzp0DGE-40">
+        <mxCell id="eby8lQmRwH70-oNyaWkp-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-2" source="3h-DcwumFSFUfmzp0DGE-42" target="3h-DcwumFSFUfmzp0DGE-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3h-DcwumFSFUfmzp0DGE-42" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;pipelineRunner::build_pods_configs&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;把build pod相关的命令和配置加上&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;会把install runner的逻辑插入到pod要运行的runners列表中，install pod环境&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
-          <mxGeometry x="70.64" y="545" width="250.31" height="90" as="geometry" />
+        <mxCell id="3h-DcwumFSFUfmzp0DGE-42" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;pipelineRunner::build_pods_configs&lt;/b&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;把build pod相关的命令和配置加上&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;会把install runner的逻辑插入到pod要运行的runners列表中，install pod环境&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;把algo-pipeline-bootstrap启动命令填入pod配置中&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-2">
+          <mxGeometry x="55.41" y="540" width="278.5" height="127" as="geometry" />
         </mxCell>
         <mxCell id="eby8lQmRwH70-oNyaWkp-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="Bu4tqk1s5aV7CT5vhAS4-1" source="3h-DcwumFSFUfmzp0DGE-40" target="eby8lQmRwH70-oNyaWkp-7">
           <mxGeometry relative="1" as="geometry">
@@ -115,7 +118,7 @@
         <mxCell id="qhfYbfU9dLJ50mcyAVRR-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" parent="Bu4tqk1s5aV7CT5vhAS4-11" source="qhfYbfU9dLJ50mcyAVRR-4" target="qhfYbfU9dLJ50mcyAVRR-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qhfYbfU9dLJ50mcyAVRR-4" value="运行algo-pipeline-bootstrap准备pod环境, 调用pipeline_pod_main入口函数&lt;br&gt;&lt;br&gt;（准备工作在build_pods_configs函数中)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
+        <mxCell id="qhfYbfU9dLJ50mcyAVRR-4" value="运行&lt;b&gt;algo-pipeline-bootstrap&lt;/b&gt;准备pod环境, 调用pipeline_pod_main入口函数&lt;br&gt;&lt;br&gt;（准备工作在build_pods_configs函数中)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="Bu4tqk1s5aV7CT5vhAS4-11" vertex="1">
           <mxGeometry x="66.25" y="140" width="267.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="qhfYbfU9dLJ50mcyAVRR-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" parent="Bu4tqk1s5aV7CT5vhAS4-11" source="qhfYbfU9dLJ50mcyAVRR-5" target="Bu4tqk1s5aV7CT5vhAS4-168" edge="1">
@@ -136,15 +139,15 @@
         <mxCell id="eby8lQmRwH70-oNyaWkp-4" value="runner n" style="shape=step;perimeter=stepPerimeter;fixedSize=1;points=[];whiteSpace=wrap;html=1;" vertex="1" parent="eby8lQmRwH70-oNyaWkp-1">
           <mxGeometry x="186" y="33" width="100" height="57" as="geometry" />
         </mxCell>
-        <mxCell id="eby8lQmRwH70-oNyaWkp-9" value="Pod" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
-          <mxGeometry x="160" y="100" width="60" height="30" as="geometry" />
+        <mxCell id="eby8lQmRwH70-oNyaWkp-9" value="Pod（run one bag)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
+          <mxGeometry x="124" y="100" width="146" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="eby8lQmRwH70-oNyaWkp-10" value="Pod" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
-          <mxGeometry x="210" y="70" width="60" height="30" as="geometry" />
+        <mxCell id="eby8lQmRwH70-oNyaWkp-15" value="Pod（run one bag)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="Bu4tqk1s5aV7CT5vhAS4-11">
+          <mxGeometry x="175" y="67" width="146" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="GT3bgRmilAbsTXQjbUiN-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;HEX_Pipeline&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;startSize=40;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1650" width="1110" height="760" as="geometry">
-            <mxRectangle x="160" y="10" width="80" height="30" as="alternateBounds" />
+        <mxCell id="GT3bgRmilAbsTXQjbUiN-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;HEX_Pipeline&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;startSize=40;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1" collapsed="1">
+          <mxGeometry x="-210" y="1790" width="80" height="30" as="geometry">
+            <mxRectangle x="140" y="1650" width="1110" height="760" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GT3bgRmilAbsTXQjbUiN-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;golang service&lt;/font&gt;" style="swimlane;html=1;startSize=20;" parent="GT3bgRmilAbsTXQjbUiN-1" vertex="1">
@@ -220,11 +223,124 @@
             <mxPoint x="835" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="eby8lQmRwH70-oNyaWkp-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-619" y="253" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-1" value="cn-octopus-perception-oracle" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1100" width="130" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="bXnVXOyE9SubhosgdwlT-1">
+          <mxGeometry x="60" y="105" width="10" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-3" value="cn-oracle-pipeline" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1100" width="110" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="bXnVXOyE9SubhosgdwlT-3" source="bXnVXOyE9SubhosgdwlT-5" target="bXnVXOyE9SubhosgdwlT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="bXnVXOyE9SubhosgdwlT-3">
+          <mxGeometry x="50" y="220" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-6" value="cn-algo-data-platform-pipeline" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1100" width="145" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="bXnVXOyE9SubhosgdwlT-6">
+          <mxGeometry x="67.5" y="75" width="10" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-8" value="cn-algo-data-platform" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1100" width="100" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="bXnVXOyE9SubhosgdwlT-8">
+          <mxGeometry x="45" y="70" width="10" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-10" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.2;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.9;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="bXnVXOyE9SubhosgdwlT-8" source="bXnVXOyE9SubhosgdwlT-9" target="bXnVXOyE9SubhosgdwlT-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="100" as="sourcePoint" />
+            <mxPoint x="140" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-11" value="1. 开发代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="bXnVXOyE9SubhosgdwlT-10">
+          <mxGeometry x="0.6743" y="-3" relative="1" as="geometry">
+            <mxPoint x="41" y="-37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-12" value="用户" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="10" y="1100" width="100" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="bXnVXOyE9SubhosgdwlT-12">
+          <mxGeometry x="45" y="100" width="10" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bXnVXOyE9SubhosgdwlT-9" target="bXnVXOyE9SubhosgdwlT-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="1230" />
+              <mxPoint x="800" y="1230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-15" value="2. 部署代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="bXnVXOyE9SubhosgdwlT-14">
+          <mxGeometry x="-0.1574" y="-3" relative="1" as="geometry">
+            <mxPoint x="-16" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bXnVXOyE9SubhosgdwlT-2" target="bXnVXOyE9SubhosgdwlT-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="1300" />
+              <mxPoint x="460" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-17" value="4. uses: cn-algo-data-platform-pipeline/build&amp;nbsp; build环境&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="bXnVXOyE9SubhosgdwlT-16">
+          <mxGeometry x="0.2729" y="1" relative="1" as="geometry">
+            <mxPoint x="-52" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bXnVXOyE9SubhosgdwlT-2" target="bXnVXOyE9SubhosgdwlT-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="1390" />
+              <mxPoint x="300" y="1390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-19" value="5. 拉取该repo 代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="bXnVXOyE9SubhosgdwlT-18">
+          <mxGeometry x="-0.3649" relative="1" as="geometry">
+            <mxPoint x="28" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bXnVXOyE9SubhosgdwlT-2" target="bXnVXOyE9SubhosgdwlT-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="1490" />
+              <mxPoint x="470" y="1490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-21" value="6.&amp;nbsp;uses: cn-algo-data-platform-pipeline/run 跑benchmark，&lt;br&gt;使用cn-oracle-pipeline repo里的config" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="bXnVXOyE9SubhosgdwlT-20">
+          <mxGeometry x="-0.0894" y="-3" relative="1" as="geometry">
+            <mxPoint x="14" y="-33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.9;exitY=0.155;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bXnVXOyE9SubhosgdwlT-13" target="bXnVXOyE9SubhosgdwlT-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="1320" as="sourcePoint" />
+            <mxPoint x="170" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bXnVXOyE9SubhosgdwlT-23" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3. 提PR，触发Action流水线，&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;跑oracle benchmark&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="bXnVXOyE9SubhosgdwlT-22">
+          <mxGeometry x="-0.4241" y="-3" relative="1" as="geometry">
+            <mxPoint x="41" y="-31" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="uOWkxm3ihJHyv5-xskdD" name="Res Scheduler">
-    <mxGraphModel dx="2510" dy="2030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2058" dy="2030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -959,6 +1075,124 @@
         </mxCell>
         <mxCell id="tGriTxqYLDUJWryV-haH-117" value="regen manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="1837.5" y="-1090" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1tjFlK1rCNgqzWbbysPu" name="pipeline repo时序">
+    <mxGraphModel dx="1631" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-1" value="cn-octopus-perception-oracle" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="70" width="130" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-1">
+          <mxGeometry x="60" y="105" width="10" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-3" value="cn-oracle-pipeline" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="70" width="110" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="DC0S8nlvIlUSVFdLSurV-3" source="DC0S8nlvIlUSVFdLSurV-5" target="DC0S8nlvIlUSVFdLSurV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-3">
+          <mxGeometry x="50" y="220" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-8" value="cn-algo-data-platform-pipeline" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="70" width="145" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-8">
+          <mxGeometry x="67.5" y="75" width="10" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-12" value="cn-algo-data-platform" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="70" width="100" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-12">
+          <mxGeometry x="45" y="70" width="10" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-16" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.2;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.9;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="DC0S8nlvIlUSVFdLSurV-12" source="DC0S8nlvIlUSVFdLSurV-13" target="DC0S8nlvIlUSVFdLSurV-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="100" as="sourcePoint" />
+            <mxPoint x="140" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-17" value="1. 开发代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-16">
+          <mxGeometry x="0.6743" y="-3" relative="1" as="geometry">
+            <mxPoint x="41" y="-37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-14" value="用户" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-70" y="70" width="100" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="DC0S8nlvIlUSVFdLSurV-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="DC0S8nlvIlUSVFdLSurV-14">
+          <mxGeometry x="45" y="100" width="10" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-13" target="DC0S8nlvIlUSVFdLSurV-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="200" />
+              <mxPoint x="720" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-2" value="2. 部署代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-1">
+          <mxGeometry x="-0.1574" y="-3" relative="1" as="geometry">
+            <mxPoint x="-16" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-2" target="DC0S8nlvIlUSVFdLSurV-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="270" />
+              <mxPoint x="380" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-19" value="4. uses: cn-algo-data-platform-pipeline/build&amp;nbsp; build环境&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-18">
+          <mxGeometry x="0.2729" y="1" relative="1" as="geometry">
+            <mxPoint x="-52" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-2" target="DC0S8nlvIlUSVFdLSurV-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="360" />
+              <mxPoint x="220" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-21" value="5. 拉取该repo 代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-20">
+          <mxGeometry x="-0.3649" relative="1" as="geometry">
+            <mxPoint x="28" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-2" target="DC0S8nlvIlUSVFdLSurV-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="460" />
+              <mxPoint x="390" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-23" value="6.&amp;nbsp;uses: cn-algo-data-platform-pipeline/run 跑benchmark，&lt;br&gt;使用cn-oracle-pipeline repo里的config" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-22">
+          <mxGeometry x="-0.0894" y="-3" relative="1" as="geometry">
+            <mxPoint x="14" y="-33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.9;exitY=0.155;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="DC0S8nlvIlUSVFdLSurV-15" target="DC0S8nlvIlUSVFdLSurV-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="290" as="sourcePoint" />
+            <mxPoint x="90" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6GUKWEaqT55oBYQ-hYBC-27" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3. 提PR，触发Action流水线，&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;跑oracle benchmark&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="6GUKWEaqT55oBYQ-hYBC-26">
+          <mxGeometry x="-0.4241" y="-3" relative="1" as="geometry">
+            <mxPoint x="41" y="-31" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
