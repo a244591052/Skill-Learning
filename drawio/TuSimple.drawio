@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-12T03:41:08.048Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="sVK4Us140BQomHbD2ntS" version="21.0.6" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-04-12T06:29:44.240Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="6VKTbx14viFwKiDcVCNb" version="21.0.6" type="github" pages="6">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline 类图">
     <mxGraphModel dx="1231" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1183,14 +1183,17 @@
         <mxCell id="Gk4_lVmsTWapjllc02Tn-10" value="ActionCall()&lt;br&gt;- 仅针对node是action的情况" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="640" y="2900" width="210" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Gk4_lVmsTWapjllc02Tn-11" value="Function&lt;br&gt;- 同步&lt;br&gt;- 异步，进队列，等待本服务消费" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="370" y="3126.25" width="240" height="62.5" as="geometry" />
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-11" value="Function&lt;br&gt;- 同步，找handle函数直接执行&lt;br&gt;- 异步，进队列，等待本服务消费" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="90" y="3126.25" width="240" height="62.5" as="geometry" />
         </mxCell>
-        <mxCell id="Gk4_lVmsTWapjllc02Tn-12" value="Task&lt;br&gt;- 存数据库，等待distributor分配" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="634.25" y="3127.5" width="221.5" height="60" as="geometry" />
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-12" target="Gk4_lVmsTWapjllc02Tn-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-12" value="Task&lt;br&gt;- 存数据库，等待distributor分配给具体work" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="354.25" y="3127.5" width="221.5" height="62.5" as="geometry" />
         </mxCell>
         <mxCell id="Gk4_lVmsTWapjllc02Tn-13" value="Ecos Pod&lt;br&gt;- 调用ecos创建pod，等待Pod执行完毕后由Ecos回调来返回结果，根据回调状态确定节点是否执行成功" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="880" y="3120" width="290" height="70" as="geometry" />
+          <mxGeometry x="600" y="3120" width="290" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Gk4_lVmsTWapjllc02Tn-14" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -1208,22 +1211,171 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Gk4_lVmsTWapjllc02Tn-17" value="hex-schedule-engine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="870" y="2850" width="210" height="30" as="geometry" />
+          <mxGeometry x="895" y="2840" width="210" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Gk4_lVmsTWapjllc02Tn-18" value="hex-action-engine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="2890" width="190" height="30" as="geometry" />
+          <mxGeometry x="905" y="2900" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Gk4_lVmsTWapjllc02Tn-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-19" target="Gk4_lVmsTWapjllc02Tn-12">
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-19" target="Gk4_lVmsTWapjllc02Tn-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Gk4_lVmsTWapjllc02Tn-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-19" target="Gk4_lVmsTWapjllc02Tn-11">
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-19" target="Gk4_lVmsTWapjllc02Tn-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Gk4_lVmsTWapjllc02Tn-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-19" target="Gk4_lVmsTWapjllc02Tn-13">
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-19" target="Gk4_lVmsTWapjllc02Tn-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Gk4_lVmsTWapjllc02Tn-19" target="Gk4_lVmsTWapjllc02Tn-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Gk4_lVmsTWapjllc02Tn-19" value="Action Type?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="695" y="2985" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-34" value="Ecos Pod Group&lt;br&gt;- 调用ecos申请pod group，通过queue接收ecos的message，依据message进行状态或操作更新" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="920" y="3126.25" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-35" value="Worker&lt;br&gt;- 业务方自己实现的worker" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="354.25" y="3260" width="221.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-37" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="3230" as="sourcePoint" />
+            <mxPoint x="1210" y="3230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gk4_lVmsTWapjllc02Tn-38" value="hex-action-worker" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="915" y="3250" width="190" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="qQScnw4qdHAnOLwP4tFr" name="第 6 页">
+    <mxGraphModel dx="1190" dy="-1139" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IkOf7GohqNnppFjA5dVC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-2" target="IkOf7GohqNnppFjA5dVC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-2" value="CreateExecute" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="221.5" y="2220" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-4" target="IkOf7GohqNnppFjA5dVC-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-4" value="EventCall" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="221.5" y="2320" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-6" target="IkOf7GohqNnppFjA5dVC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-6" value="EventsQueue.SendMsg" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="205.75" y="2420" width="141.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-8" target="IkOf7GohqNnppFjA5dVC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-8" value="消费event，查询workflow，生成execute，生成run对象" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="390" y="2550" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-10" target="IkOf7GohqNnppFjA5dVC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-10" value="Event Queue" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="201.5" y="2545" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-12" target="IkOf7GohqNnppFjA5dVC-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-12" value="Schedule Queue" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="670.75" y="2545" width="148.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-14" target="IkOf7GohqNnppFjA5dVC-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-14" value="消费schedule，查询run信息" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2650" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-16" target="IkOf7GohqNnppFjA5dVC-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-16" value="run.handle()" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2740" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-18" target="IkOf7GohqNnppFjA5dVC-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-18" value="node.Operate()" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2820" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-20" target="IkOf7GohqNnppFjA5dVC-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-20" value="ActionCall()&lt;br&gt;- 仅针对node是action的情况" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2900" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-21" value="Function&lt;br&gt;- 同步，找handle函数直接执行&lt;br&gt;- 异步，进队列，等待本服务消费" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="90" y="3126.25" width="240" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-23" target="IkOf7GohqNnppFjA5dVC-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-23" value="Task&lt;br&gt;- 存数据库，等待distributor分配给具体work" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="354.25" y="3127.5" width="221.5" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-24" value="Ecos Pod&lt;br&gt;- 调用ecos创建pod，等待Pod执行完毕后由Ecos回调来返回结果，根据回调状态确定节点是否执行成功" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="600" y="3120" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-25" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="2300" as="sourcePoint" />
+            <mxPoint x="1190" y="2300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-26" value="hex-api" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="2260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-27" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="2880" as="sourcePoint" />
+            <mxPoint x="1210" y="2880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-28" value="hex-schedule-engine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="895" y="2840" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-29" value="hex-action-engine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="905" y="2900" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-34" target="IkOf7GohqNnppFjA5dVC-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-34" target="IkOf7GohqNnppFjA5dVC-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-34" target="IkOf7GohqNnppFjA5dVC-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IkOf7GohqNnppFjA5dVC-34" target="IkOf7GohqNnppFjA5dVC-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-34" value="Action Type?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="695" y="2985" width="100" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-35" value="Ecos Pod Group&lt;br&gt;- 调用ecos申请pod group，通过queue接收ecos的message，依据message进行状态或操作更新" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="920" y="3126.25" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-36" value="Worker&lt;br&gt;- 业务方自己实现的worker" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="354.25" y="3260" width="221.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-37" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="3230" as="sourcePoint" />
+            <mxPoint x="1210" y="3230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IkOf7GohqNnppFjA5dVC-38" value="hex-action-worker" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="915" y="3250" width="190" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
