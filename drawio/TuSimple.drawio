@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-12T06:21:37.446Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="0INNTZKWou-y7sxcBoGV" version="21.2.9" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-05-15T06:31:39.730Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="FYNuuCeYVc31_1sYfaho" version="21.2.9" type="github" pages="6">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline 类图">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1250,7 +1250,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qQScnw4qdHAnOLwP4tFr" name="hex 流程图">
-    <mxGraphModel dx="1434" dy="-1166" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1368" dy="-1193" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1416,7 +1416,10 @@
           <mxGeometry x="562.87" y="4090" width="205.01" height="65" as="geometry" />
         </mxCell>
         <mxCell id="tbvLyzi__Tys7XNzpY5W-1" value="Pipeline Runner&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 解析runner.yaml和context.yaml，调Ecos Home API生成pod&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 通过queue接收ecos的message，依据message进行状态或操作更新&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="920" y="3118.75" width="380" height="70" as="geometry" />
+          <mxGeometry x="920" y="3118.75" width="320" height="91.25" as="geometry" />
+        </mxCell>
+        <mxCell id="dYOwpehQIEc4vUBRUkov-1" value="Steaming Runner&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 解析&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="3118.75" width="300" height="91.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
