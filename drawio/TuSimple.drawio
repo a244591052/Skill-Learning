@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-15T07:20:22.998Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="m0g-ZOk4viSAwF-vpgaG" version="21.2.9" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-05-15T07:23:17.324Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="6ZKIzPV-sfilRLcf85E1" version="21.2.9" type="github" pages="6">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline 类图">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1457,7 +1457,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-99" value="2.3 解析execute任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-97">
+        <mxCell id="ePdswEQErEI4JULXuaHC-99" value="2.3 解析execute任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-97">
           <mxGeometry x="-0.3929" relative="1" as="geometry">
             <mxPoint x="55" y="10" as="offset" />
           </mxGeometry>
@@ -1488,7 +1488,7 @@
             <mxPoint x="125" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-60" value="任务调度" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-59">
+        <mxCell id="ePdswEQErEI4JULXuaHC-60" value="任务调度" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-59">
           <mxGeometry x="-0.5" relative="1" as="geometry">
             <mxPoint x="30" y="10" as="offset" />
           </mxGeometry>
@@ -1522,7 +1522,7 @@
         <mxCell id="ePdswEQErEI4JULXuaHC-38" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1" source="ePdswEQErEI4JULXuaHC-34" target="ePdswEQErEI4JULXuaHC-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-39" value="1.2 上传workflow（类似PR触发）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-38">
+        <mxCell id="ePdswEQErEI4JULXuaHC-39" value="1.2 上传workflow（类似PR触发）" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-38">
           <mxGeometry x="-0.2" y="-2" relative="1" as="geometry">
             <mxPoint x="15" y="-17" as="offset" />
           </mxGeometry>
@@ -1530,7 +1530,7 @@
         <mxCell id="ePdswEQErEI4JULXuaHC-42" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1" source="ePdswEQErEI4JULXuaHC-40" target="ePdswEQErEI4JULXuaHC-41">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-43" value="2.1 创建pipeline task run， 解析step" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-42">
+        <mxCell id="ePdswEQErEI4JULXuaHC-43" value="2.1 创建pipeline task run， 解析step" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-42">
           <mxGeometry x="-0.1642" y="3" relative="1" as="geometry">
             <mxPoint x="20" y="-7" as="offset" />
           </mxGeometry>
@@ -1538,7 +1538,7 @@
         <mxCell id="ePdswEQErEI4JULXuaHC-45" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1" source="ePdswEQErEI4JULXuaHC-41" target="ePdswEQErEI4JULXuaHC-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-46" value="2.2 调用create execute API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-45">
+        <mxCell id="ePdswEQErEI4JULXuaHC-46" value="2.2 调用create execute API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-45">
           <mxGeometry x="-0.0963" y="-1" relative="1" as="geometry">
             <mxPoint y="-11" as="offset" />
           </mxGeometry>
@@ -1551,7 +1551,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-53" value="2.4 申请ecos pod group" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-52">
+        <mxCell id="ePdswEQErEI4JULXuaHC-53" value="2.4 申请ecos pod group" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-52">
           <mxGeometry x="-0.1463" y="-3" relative="1" as="geometry">
             <mxPoint x="12" y="-13" as="offset" />
           </mxGeometry>
@@ -1559,7 +1559,7 @@
         <mxCell id="ePdswEQErEI4JULXuaHC-54" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1" source="ePdswEQErEI4JULXuaHC-44" target="ePdswEQErEI4JULXuaHC-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-55" value="转发任务，申请任务调度" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-54">
+        <mxCell id="ePdswEQErEI4JULXuaHC-55" value="转发任务，申请任务调度" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-54">
           <mxGeometry x="0.0034" y="-1" relative="1" as="geometry">
             <mxPoint x="-2" y="-16" as="offset" />
           </mxGeometry>
@@ -1571,7 +1571,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-57" value="消费任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-56">
+        <mxCell id="ePdswEQErEI4JULXuaHC-57" value="消费任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-56">
           <mxGeometry x="-0.3692" y="-1" relative="1" as="geometry">
             <mxPoint x="11" y="-16" as="offset" />
           </mxGeometry>
@@ -1583,7 +1583,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-64" value="启停Pod" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-63">
+        <mxCell id="ePdswEQErEI4JULXuaHC-64" value="启停Pod" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-63">
           <mxGeometry x="-0.4667" y="1" relative="1" as="geometry">
             <mxPoint x="24" y="-9" as="offset" />
           </mxGeometry>
@@ -1595,7 +1595,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-66" value="生产任务状态更新msg" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-65">
+        <mxCell id="ePdswEQErEI4JULXuaHC-66" value="生产任务状态更新msg" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-65">
           <mxGeometry x="0.2242" y="2" relative="1" as="geometry">
             <mxPoint x="16" y="-12" as="offset" />
           </mxGeometry>
@@ -1607,7 +1607,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-68" value="消费任务状态更新msg" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-67">
+        <mxCell id="ePdswEQErEI4JULXuaHC-68" value="消费任务状态更新msg" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-67">
           <mxGeometry x="0.3475" relative="1" as="geometry">
             <mxPoint x="20" y="-10" as="offset" />
           </mxGeometry>
@@ -1619,7 +1619,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-71" value="转发任务状态更新msg" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-70">
+        <mxCell id="ePdswEQErEI4JULXuaHC-71" value="转发任务状态更新msg" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-70">
           <mxGeometry x="0.2874" y="2" relative="1" as="geometry">
             <mxPoint x="18" y="-12" as="offset" />
           </mxGeometry>
@@ -1631,7 +1631,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-74" value="消费任务状态更新msg，写入数据库" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-73">
+        <mxCell id="ePdswEQErEI4JULXuaHC-74" value="消费任务状态更新msg，写入数据库" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-73">
           <mxGeometry x="0.0875" y="5" relative="1" as="geometry">
             <mxPoint x="8" y="-25" as="offset" />
           </mxGeometry>
@@ -1643,7 +1643,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ePdswEQErEI4JULXuaHC-76" value="3.1 查询任务状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-75">
+        <mxCell id="ePdswEQErEI4JULXuaHC-76" value="3.1 查询任务状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ePdswEQErEI4JULXuaHC-75">
           <mxGeometry x="-0.2542" y="3" relative="1" as="geometry">
             <mxPoint x="15" y="-7" as="offset" />
           </mxGeometry>
