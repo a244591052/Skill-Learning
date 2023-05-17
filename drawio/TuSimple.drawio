@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-16T06:36:26.331Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="hx6OPktfcqmoHSomsIOX" version="21.2.9" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-05-17T01:55:41.413Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="aAYRoCxOgbPeKHD2cZTR" version="21.2.9" type="github" pages="6">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="pipeline 类图">
     <mxGraphModel dx="1434" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1250,7 +1250,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qQScnw4qdHAnOLwP4tFr" name="hex 流程图">
-    <mxGraphModel dx="1834" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1768" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1360,8 +1360,8 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1065" y="3126.25" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="745" y="3080" />
-              <mxPoint x="1080" y="3080" />
+              <mxPoint x="745" y="3090" />
+              <mxPoint x="1080" y="3090" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1421,9 +1421,6 @@
         </mxCell>
         <mxCell id="tbvLyzi__Tys7XNzpY5W-1" value="Pipeline Runner&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 解析runner.yaml和context.yaml，调Ecos Home API生成pod&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 通过queue接收ecos的message，依据message进行状态或操作更新&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="920" y="3118.75" width="320" height="91.25" as="geometry" />
-        </mxCell>
-        <mxCell id="dYOwpehQIEc4vUBRUkov-1" value="Steaming Runner&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 解析&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1290" y="3118.75" width="300" height="91.25" as="geometry" />
         </mxCell>
         <mxCell id="ePdswEQErEI4JULXuaHC-1" value="用户repo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=16;align=center;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="130" y="70" width="100" height="160" as="geometry" />
